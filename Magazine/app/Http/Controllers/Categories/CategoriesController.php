@@ -12,7 +12,7 @@ class CategoriesController extends Controller
 
     public function __construct(CategoriesService $categoriesService)
     {
-        $this->categoriesService->$categoriesService;
+        $this->categoriesService = $categoriesService;
     }
 
     public function list()

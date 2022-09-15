@@ -22,7 +22,7 @@ class CategoryService
 
     public function update($id, $newCategory)
     {
-        $category = $this->categoryModel->get($id);
+        $category = $this->show($id);
         $category->update($newCategory);
     }
 
